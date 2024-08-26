@@ -26,7 +26,7 @@ This directory contains the LaTeX source files for the project report. It includ
 
 1. **Clone the Repository**:
 
-`git clone https://github.com/yourusername/your-repo-name.git cd your-repo-name`
+`git clone https://github.com/firehas123/Medizintechnik-II-Final-Project.git cd Medizintechnik-II-Final-Project`
 
 
 2. **Set Up the Java Environment**:
