@@ -12,27 +12,6 @@ The project includes the following key components:
 - **Segmentation Evaluation**: Analysis of segmentation results using metrics like sensitivity, specificity, Dice Coefficient, and Jaccard Index.
 - **User Interface**: A custom interface that allows users to select and apply different image processing techniques to grayscale images.
 
-## Project Structure
-
-The repository is structured as follows:
-
-├── src/
-│   ├── Task_1_Threshold.java
-│   ├── Task_2_EvaluateSegmentation.java
-│   ├── Task_3_Otsu.java
-│   ├── Task_4_Filters.java
-│   ├── Task_5_CannyEdgeDetection.java
-│   ├── User_Interface.java
-│   └── EvaluationResult.java
-├── latex-template/
-│   ├── report.tex
-│   ├── bibliography.bib
-│   └── figures/
-│       ├── figure1.png
-│       ├── figure2.png
-│       └── ...
-├── README.md
-
 
 ### `src/`
 This directory contains all Java source files that implement the image processing techniques, including thresholding, edge detection, and evaluation of segmentation. The `User_Interface.java` file provides a user-friendly interface for interacting with these techniques.
