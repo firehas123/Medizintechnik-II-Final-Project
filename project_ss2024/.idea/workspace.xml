@@ -12,6 +12,7 @@
       <change beforePath="$PROJECT_DIR$/plugins/Task_3_Otsu.class" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/Task_3_Otsu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/Task_4_Filters.class" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/Task_4_Filters.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/Task_5_CannyEdgeDetection.class" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/Task_5_CannyEdgeDetection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/User_Interface.class" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/User_Interface.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/project/Task_1_Threshold.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/project/Task_2_EvaluateSegmentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task_2_EvaluateSegmentation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/project/Task_3_Otsu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task_3_Otsu.java" afterDir="false" />
@@ -95,8 +96,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.387" />
-        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.387" />
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.419" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.419" />
       </set>
     </attachedChunks>
   </component>
@@ -110,6 +111,8 @@
       <updated>1723848460628</updated>
       <workItem from="1723848462089" duration="4802000" />
       <workItem from="1723971945223" duration="53040000" />
+      <workItem from="1724534173199" duration="441000" />
+      <workItem from="1724534695582" duration="23061000" />
     </task>
     <servers />
   </component>

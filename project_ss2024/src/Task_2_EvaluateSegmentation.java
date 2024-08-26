@@ -24,13 +24,13 @@ public class Task_2_EvaluateSegmentation implements PlugInFilter {
 
             ImageProcessor reference = referenceImage.getProcessor();
 
-            // Debug: Print out some information about the images
-            System.out.println("Segmentation Image - Width: " + ip.getWidth() + ", Height: " + ip.getHeight());
-            System.out.println("Reference Image - Width: " + reference.getWidth() + ", Height: " + reference.getHeight());
-
-            // Print out some pixel values for comparison
-            System.out.println("Segmentation Pixel (0,0): " + ip.getPixel(0, 0));
-            System.out.println("Reference Pixel (0,0): " + reference.getPixel(0, 0));
+//            // Debug: Print out some information about the images
+//            System.out.println("Segmentation Image - Width: " + ip.getWidth() + ", Height: " + ip.getHeight());
+//            System.out.println("Reference Image - Width: " + reference.getWidth() + ", Height: " + reference.getHeight());
+//
+//            // Print out some pixel values for comparison
+//            System.out.println("Segmentation Pixel (0,0): " + ip.getPixel(0, 0));
+//            System.out.println("Reference Pixel (0,0): " + reference.getPixel(0, 0));
 
             // Evaluate segmentation
             EvaluationResult result = evaluateSegmentation(ip, reference);

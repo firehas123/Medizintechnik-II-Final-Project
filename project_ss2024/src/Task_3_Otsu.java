@@ -157,6 +157,8 @@ import ij.process.ImageProcessor;
 public class Task_3_Otsu implements PlugInFilter {
     int NUM_INTENSITY_LEVELS = 256;
 
+    private ImageProcessor resultProcessor; // this is for userInterface to get the result as we aren't processing on the processed image
+
     Task_1_Threshold thresholdObj = new Task_1_Threshold();  // Inherit methods from Task_1
 
     @Override
@@ -316,5 +318,10 @@ public class Task_3_Otsu implements PlugInFilter {
             }
         }
         return maxIndex;
+    }
+
+    //Getter
+    public ImageProcessor getResultProcessor() {
+        return resultProcessor;
     }
 }

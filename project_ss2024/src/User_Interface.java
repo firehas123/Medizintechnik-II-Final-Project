@@ -45,16 +45,18 @@ public class User_Interface implements PlugInFilter {
             int temp = GD.getNextChoiceIndex();
             int ThreshChoiceIdx = GD.getNextChoiceIndex();
             boolean eval = GD.getNextBoolean();
-
+            ImageProcessor result = null;
             if (ThreshChoiceIdx == 0){
                 Threshold.run(imageProcessor);
+                result = Threshold.getResultProcessor(); // This will help us get the processed image and eventually evaluate it.
             }
             else{
                 Otsu.run(imageProcessor);
+                result = Otsu.getResultProcessor();
             }
 
             if (eval){
-                Evaluate.run(imageProcessor);
+                Evaluate.run(result);
             }
 
         }

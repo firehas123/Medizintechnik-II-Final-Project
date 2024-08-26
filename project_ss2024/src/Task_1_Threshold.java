@@ -9,6 +9,9 @@ import ij.process.FloatProcessor;
 
 
 public class Task_1_Threshold implements PlugInFilter {
+
+    private ImageProcessor resultProcessor; // this is for userInterface to get the result as we aren't processing on the processed image
+
     public Task_1_Threshold() {
     }
 
@@ -20,7 +23,7 @@ public class Task_1_Threshold implements PlugInFilter {
         ImageProcessor originalIp = ip.duplicate();
         GenericDialog gd = new GenericDialog("Thresholding");
         gd.addNumericField("Threshold value:", 128.0, 0);
-        gd.addCheckbox("Correct unevent illumination", false);
+        gd.addCheckbox("Correct uneven illumination", false);
         gd.showDialog();
         if (!gd.wasCanceled()) {
             int threshold = (int)gd.getNextNumber();
@@ -39,6 +42,7 @@ public class Task_1_Threshold implements PlugInFilter {
 //            correctedImage.show();
 
             ByteProcessor thresholdedIp = this.threshold(ipCopy, threshold);
+            this.resultProcessor = thresholdedIp;// this is for userInterface to get the result as we aren't processing on the processed image
             ImagePlus thresholdedImage = new ImagePlus("Thresholded Image", thresholdedIp);
             thresholdedImage.show();
         }
@@ -63,13 +67,6 @@ public class Task_1_Threshold implements PlugInFilter {
     }
 
 
-
-
-
-
-
-
-
     public ByteProcessor threshold(ImageProcessor ip, int threshold) {
         ByteProcessor bp = new ByteProcessor(ip.getWidth(), ip.getHeight());
 
@@ -82,4 +79,10 @@ public class Task_1_Threshold implements PlugInFilter {
 
         return bp;
     }
+
+    //Getter
+    public ImageProcessor getResultProcessor() {
+        return resultProcessor;
+    }
+
 }
